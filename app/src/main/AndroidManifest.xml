@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.digilabs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".hematologi.quizActivity"></activity>
+        <activity android:name=".hematologi.gamesActivity1" />
+        <activity android:name=".hematologi.showPDF_materi" />
+        <activity android:name=".hematologi.showPDF_langkah" />
+        <activity android:name=".hematologi.gamesActivity3" />
+        <activity android:name=".hematologi.gamesActivity2" />
+        <activity android:name=".hematologi.hitungLeukositActivity" />
+        <activity android:name=".hematologi.hematologiActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".signIn.signInActivity" />
+        <activity
+            android:name=".hematologi.infoActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
